@@ -1,0 +1,205 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideDown 1s ease-in-out;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Hero section styling */
+.hero {
+    background: linear-gradient(to right, #4b79a1, #283e51);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .content {
+    max-width: 800px; 
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    flex-direction: row; 
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About section styling */
+.about-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Projects section styling */
+.projects-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+     animation: zoomIn 0.3s forwards;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #4b79a1;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section styling */
+.contact-section {
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: slideUp 1s ease-in-out;
+}
+
+.contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1em;
+}
+
+/* Animasi Link Hover */
+.contact-section a {
+    color: #4b79a1;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-section a:hover {
+    color: #283e51;
+    transform: scale(1.05); /* Efek memperbesar sedikit saat dihover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0; 
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer .end {
+    color: #ffffff; 
+}
